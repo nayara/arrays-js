@@ -1,7 +1,5 @@
 // Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
-
 // You may assume that each input would have exactly one solution, and you may not use the same element twice.
-
 // You can return the answer in any order.
 
 const iterative = (numbers, targetSum) => {
@@ -21,6 +19,7 @@ const iterative = (numbers, targetSum) => {
 
   return [];
 };
+// complexity o(n2) => worst case go throught every element of the arrays
 
 const withPointers = (numbers, targetSum) => {
   let left = 0;
@@ -40,6 +39,7 @@ const withPointers = (numbers, targetSum) => {
 
   return [];
 };
+// complexity o(n) => worst case go throught every element of array once
 
 const twoSum = {
   iterative,
